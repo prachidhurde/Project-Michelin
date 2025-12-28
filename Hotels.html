@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .overlay {
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-section {
+            min-height: 90vh;
+            background: url('https://via.placeholder.com/1600x900') center/cover no-repeat;
+            position: relative;
+        }
+
+        .hero-section .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.2));
+        }
+
+        .icon-circle {
+            width: 34px;
+            height: 34px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="container-fluid fixed-top bg-light shadow" id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <img src="c:\Users\Shree\OneDrive\Desktop\UI\Bootstrap\Project_Michelin\image\michelin-guide-logo-dark-3a2375154bf280f461bfdf04fdc8519f.svg"
+                    class="img-fluid" alt="..." style="width: 300px;">
+                <div id="menu" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="Restaurants.html">Restaurants</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Hotels.html">Hotels</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="Travel Guides.html">Travel Guides</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Magazine.html">Magazine</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Favorites.html">Favorites</a></li>
+                    </ul>
+                </div>
+                <img src="c:\Users\Shree\OneDrive\Desktop\UI\Bootstrap\Project_Michelin\image\michelin-default-profile-image-3ee14e19410e06fe343151d6631ad6c1.png"
+                    class="rounded float-end" alt="..." width="30px">
+                <img src="c:\Users\Shree\OneDrive\Desktop\UI\Bootstrap\Project_Michelin\image\burger-menu-b32e5df2baa0669846e9c33851866526.svg"
+                    class="rounded float-end" alt="..." width="30px">
+            </div>
+        </nav>
+    </section>
+    <section class="hero-section d-flex align-items-center text-white">
+        <div class="overlay">
+            <img src="c:\Users\Shree\Downloads\f15f4b6ef1094ff4877d3fc679aaee76_LeJardinDesDouars.jpg" alt="">
+        </div>
+
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-lg-7">
+
+                    <h1 class="fw-bold mb-4">
+                        Book the world's most exciting hotels, as selected by<br>
+                        the MICHELIN Guide
+                    </h1>
+
+                    <div class="bg-white rounded-3 p-3 shadow-lg text-dark">
+
+                        <div class="mb-3">
+                            <label class="small fw-semibold">DESTINATION OR HOTEL</label>
+                            <input type="text" class="form-control form-control-lg"
+                                placeholder="Search a Destination or a Hotel">
+                        </div>
+
+                        <div class="row g-2 align-items-end">
+                            <div class="col-md-5">
+                                <label class="small fw-semibold">DATES</label>
+                                <input type="text" class="form-control" placeholder="Arriving - Leaving">
+                            </div>
+
+                            <div class="col-md-2">
+                                <label class="small fw-semibold">GUESTS</label>
+                                <input type="number" class="form-control" value="1">
+                            </div>
+
+                            <div class="col-md-2">
+                                <label class="small fw-semibold">ROOMS</label>
+                                <input type="number" class="form-control" value="1">
+                            </div>
+
+                            <div class="col-md-3 d-grid">
+                                <button class="btn btn-danger btn-lg">
+                                    Search
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="fw-bold">Firmdale Hotels: 20% Off</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="position-relative">
+                            <img src="c:\Users\Shree\Downloads\1365741.jpg" class="card-img-top">
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="fw-bold mt-2">Charlotte Street Hotel, Firmdale Hotels</h5>
+                            <p class="mb-1 text-muted">London, UK</p>
+                            <p class="fw-semibold mb-0">Guest score: 19.6</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="position-relative">
+                            <img src="c:\Users\Shree\Downloads\1365759.jpg" class="card-img-top">
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="fw-bold mt-2">Covent Garden Hotel, Firmdale Hotels</h5>
+                            <p class="mb-1 text-muted">London, UK</p>
+                            <p class="fw-semibold mb-0">Guest score: 19.6</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="position-relative">
+                            <img src="c:\Users\Shree\Downloads\1362091.jpg" class="card-img-top">
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="fw-bold mt-2">Dorset Square Hotel, Firmdale Hotels</h5>
+                            <p class="mb-1 text-muted">London, UK</p>
+                            <p class="fw-semibold mb-0">Guest score: 19.2</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="fw-bold">Discounts When You Book with MICHELIN Guide</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="c:\Users\Shree\Downloads\1405516.jpg" class="card-img-top">
+                            </span>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="fw-bold mt-2">Hotel Bardo Savannah</h5>
+                            <p class="mb-1 text-muted">Savannah, USA</p>
+                            <p class="fw-semibold mb-0">Guest score: 19</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="c:\Users\Shree\Downloads\1462978.jpg" class="card-img-top">
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="fw-bold mt-2">Palazzo Talia</h5>
+                            <p class="mb-1 text-muted">Rome, Italy</p>
+                            <p class="fw-semibold mb-0">Guest score: 19.7</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="c:\Users\Shree\Downloads\1392200.jpg" class="card-img-top">
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="fw-bold mt-3">Chateau Denmark London</h5>
+                            <p class="mb-1 text-muted">London, UK</p>
+                            <p class="fw-semibold mb-0">Guest score: 18.8</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="fw-bold">$100 Hotel Credit for Plus Members</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="c:\Users\Shree\Downloads\1486040.jpg" class="card-img-top">
+                            </span>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="fw-bold mt-2">Splendide Royal Paris</h5>
+                            <p class="mb-1 text-muted">Paris,France</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="c:\Users\Shree\Downloads\1380785.jpg" class="card-img-top">
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="fw-bold mt-2">The Fifth Avenue Hotel</h5>
+                            <p class="mb-1 text-muted">New York City,USA</p>
+                            <p class="fw-semibold mb-0">Guest score:20</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="c:\Users\Shree\Downloads\1238195.jpg" class="card-img-top">
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="fw-bold mt-3">Crans Ambassador</h5>
+                            <p class="mb-1 text-muted">Crans-Montana,Switzerland</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="bg-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-6 col-md-3 mb-4">
+                    <h6 class="fw-bold text-uppercase">Discover</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-muted">Abu Dhabi</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Argentina</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Austria</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Belgium</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Brazil</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Canada</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">China Mainland</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Croatia</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Czech Republic</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Denmark</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Dubai</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Estonia</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Finland</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">France</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Germany</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Greece</a></li>
+
+
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <h6 class="fw-bold text-uppercase">About</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-muted">About MICHELIN</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">The MICHELIN Guide</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Partners</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Press</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Hong Kong SAR</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Iceland</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Lithuania</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Mexico</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Norway</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Portugal</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Poland</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <h6 class="fw-bold text-uppercase">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-muted">For Restaurants</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">For Hotels</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Careers</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Qatar</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Saudi Arabia</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Serbia</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Republic of Ireland</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Slovenia</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">South Korea</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Spain</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Switzerland</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Taiwan Region</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Thailand</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">USA</a></li>
+
+
+
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <h6 class="fw-bold text-uppercase">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-muted">Privacy Policy</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Cookie Policy</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Legal Notice</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">About The Guide</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Restaurants</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Hotels</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">TheFork Prefered Partnership</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Contact Us</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Leave a Review</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">MICHELIN Guide Plus</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">The MICHELIN Company</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">ViaMichelin</a></li>
+
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="text-center border-top pt-3 mt-3">
+                <p class="mb-0 text-muted small">
+                    © 2025 MICHELIN Guide. All rights reserved.
+                </p>
+            </div>
+
+        </div>
+        <div class="container text-center">
+            <p class="small text-muted mb-0">© 2025 MICHELIN Guide | Bootstrap 5.2 Project</p>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
